@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int factor_1, factor_2;
+    char symbol;
+    cout << "Enter first factor:\t";
+    cin >> factor_1;
+
+    cout << "Enter symbol (+, -, *, /):\t";
+    cin >> symbol;
+
+    cout << "Enter second factor:\t";
+    cin >> factor_2;
+
+
+    switch (symbol) {
+    case '+':
+        cout << "Result" << factor_1 + factor_2 << endl ;
+         break;
+    case '-':
+        cout << "Result" << factor_1 - factor_2 << endl;
+        break;
+    case '*':
+        cout << "Result" << factor_1 * factor_2 << endl;
+        break;
+    case '/':
+        if (factor_2 != 0)
+            cout << "Result" << factor_1 / factor_2 << endl;
+        else
+            cout << "error" << endl;
+        break;
+    default:
+        cout << "Error" << endl;
+        break;
+    }
+    return 0;
+}
