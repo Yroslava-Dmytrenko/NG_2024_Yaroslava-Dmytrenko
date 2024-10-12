@@ -1,0 +1,9 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout << "Yaroslava\n";
+    cout << "Dmytrenko\n";
+}
