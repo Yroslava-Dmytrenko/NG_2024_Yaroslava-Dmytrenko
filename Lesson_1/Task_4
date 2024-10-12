@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int wage;
+
+    cout << "Enter your wage:\t";
+    cin >> wage;
+
+    if (1000 - wage > 0)
+    {
+        cout << "You should earn more\n";
+    }
+
+    if ((wage - 1000) * (wage - 1000000) < 0)
+    {
+        cout << "You are well done\n";
+    }
+    if  (wage - 1000000 > 0)
+    {
+        cout << "You are a millionaire\n";
+    }
+
+}
